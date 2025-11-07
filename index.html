@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla JavaScript and LocalStorage CRUD project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="class1">
+    <h1>Vanilla JavaScript and LocalStorage CRUD project</h1>
+    <section class="class2">
+      <div class="class3">
+        <label>
+          <span>Product Code</span>
+          <input id="id" placeholder="only numbers..." />
+        </label>
+        <label>
+          <span>Product Name</span>
+          <input id="name" placeholder="name..." />
+        </label>
+        <label>
+          <span>Product Quantity</span>
+          <input id="quantity" type="number" min="1" placeholder="qty..." />
+        </label>
+
+        <div class="actions">
+           <button id="addBtn">Insert new</button>
+           <button id="editBtn">Edit item</button>
+           <button id="clearBtn" class="ghost">Clear form</button>
+        </div>
+      </div>
+      <div class="id">
+        <label>
+          <span>Find Product by Code</span>
+          <input id="actionId" placeholder="only numbers..." />
+        </label>
+       <div class="actions">
+           <button id="loadBtn">Select from LS</button>
+           <button id="findBtn">Show in Cart</button>
+           <button id="deleteBtn" class="danger">Delete by ID</button>
+       </div>
+      </div>
+    </section>
+    <p id="message" role="status" aria-live="polite"></p>
+   
+      <tbody id="tableBody"></tbody>
+    </table>
+    <table class="tbl">
+      <tbody id="foundBody"></tbody>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
